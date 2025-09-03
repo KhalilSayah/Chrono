@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: chrono-terminal-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_SECRET_CODE
+        value: REBOOT2024
+      - key: CLIENT_URL
+        value: https://votre-app.vercel.app
+    healthCheckPath: /

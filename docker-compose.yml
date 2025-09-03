@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  chrono-terminal:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - CLIENT_URL=*
+      - ADMIN_SECRET_CODE=REBOOT2024
+    restart: unless-stopped
+    volumes:
+      - ./server/.env:/app/server/.env:ro
+    networks:
+      - chrono-network
+
+networks:
+  chrono-network:
+    driver: bridge
