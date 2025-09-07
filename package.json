@@ -1,5 +1,5 @@
 {
-  "name": "chrono-terminal",
+  "name": "bipseed-39",
   "version": "1.0.0",
   "description": "Application web temps réel avec interface terminal pour cycles collaboratifs",
   "main": "server/index.js",

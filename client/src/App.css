@@ -8,7 +8,7 @@
 body {
   font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
   background-color: #000;
-  color: #00ff00;
+  color: #0080ff;
   overflow: hidden;
   height: 100vh;
 }
@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, #000000 0%, #001100 100%);
+  background: linear-gradient(45deg, #000000 0%, #001144 100%);
   padding: 20px;
 }
 
@@ -35,11 +35,11 @@ body {
 .terminal {
   flex: 2;
   background-color: #000;
-  border: 2px solid #00ff00;
+  border: 2px solid #0080ff;
   border-radius: 8px;
   box-shadow: 
-    0 0 20px #00ff0050,
-    inset 0 0 20px #00ff0020;
+    0 0 20px #0080ff50,
+    inset 0 0 20px #0080ff20;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -58,8 +58,8 @@ body {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 255, 0, 0.03) 2px,
-    rgba(0, 255, 0, 0.03) 4px
+    rgba(0, 128, 255, 0.03) 2px,
+      rgba(0, 128, 255, 0.03) 4px
   );
   pointer-events: none;
   z-index: 1;
@@ -67,9 +67,9 @@ body {
 
 /* Header du terminal */
 .terminal-header {
-  background-color: #001100;
+  background-color: #001144;
   padding: 10px 20px;
-  border-bottom: 1px solid #00ff00;
+  border-bottom: 1px solid #0080ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,13 +80,13 @@ body {
 .terminal-title {
   font-size: 18px;
   font-weight: bold;
-  color: #00ff00;
-  text-shadow: 0 0 10px #00ff00;
+  color: #0080ff;
+  text-shadow: 0 0 10px #0080ff;
 }
 
 .connection-status {
   font-size: 12px;
-  color: #00aa00;
+  color: #0066cc;
 }
 
 /* Corps du terminal */
@@ -111,8 +111,8 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  color: #00ff00;
-  text-shadow: 0 0 15px #00ff00;
+  color: #0080ff;
+  text-shadow: 0 0 15px #0080ff;
   animation: pulse 2s infinite;
 }
 
@@ -131,14 +131,14 @@ body {
 .info-line, .time-line {
   font-size: 16px;
   text-align: center;
-  color: #00aa00;
+  color: #0066cc;
   margin: 10px 0;
 }
 
 .waiting-message {
   font-size: 18px;
   text-align: center;
-  color: #006600;
+  color: #004488;
   font-style: italic;
   margin-top: 40px;
 }
@@ -164,9 +164,9 @@ body {
 }
 
 .prompt {
-  color: #00ff00;
+  color: #0080ff;
   font-weight: bold;
-  text-shadow: 0 0 10px #00ff00;
+  text-shadow: 0 0 10px #0080ff;
 }
 
 .prompt.error {
@@ -177,14 +177,14 @@ body {
 .terminal-input {
   background: transparent;
   border: none;
-  border-bottom: 2px solid #00ff00;
-  color: #00ff00;
+  border-bottom: 2px solid #0080ff;
+  color: #0080ff;
   font-family: inherit;
   font-size: 18px;
   padding: 8px 12px;
   outline: none;
   min-width: 300px;
-  text-shadow: 0 0 5px #00ff00;
+  text-shadow: 0 0 5px #0080ff;
 }
 
 .terminal-input:focus {
@@ -204,7 +204,7 @@ body {
 }
 
 .terminal-input::placeholder {
-  color: #006600;
+  color: #004488;
   opacity: 0.7;
 }
 
@@ -216,11 +216,11 @@ body {
 .words-display {
   margin-top: 20px;
   padding: 15px;
-  background-color: #001100;
-  border: 1px solid #00aa00;
+  background-color: #001144;
+  border: 1px solid #0066cc;
   border-radius: 4px;
   font-size: 14px;
-  color: #00aa00;
+  color: #0066cc;
   text-align: center;
   max-height: 100px;
   overflow-y: auto;
@@ -228,16 +228,16 @@ body {
 
 /* Footer du terminal */
 .terminal-footer {
-  background-color: #001100;
+  background-color: #001144;
   padding: 10px 20px;
-  border-top: 1px solid #00ff00;
+  border-top: 1px solid #0080ff;
   position: relative;
   z-index: 2;
 }
 
 .footer-line {
   font-size: 12px;
-  color: #006600;
+  color: #004488;
   text-align: center;
   font-style: italic;
 }
@@ -275,7 +275,7 @@ body {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #00ff00;
+  color: #0080ff;
   animation: blink 1s infinite;
 }
 
@@ -385,9 +385,9 @@ body {
 }
 
 .audio-btn {
-  background: #001100;
-  color: #00ff00;
-  border: 1px solid #00aa00;
+  background: #001144;
+  color: #0080ff;
+  border: 1px solid #0066cc;
   padding: 8px 16px;
   font-family: inherit;
   font-size: 12px;
@@ -397,13 +397,13 @@ body {
 }
 
 .audio-btn:hover {
-  background: #00aa00;
+  background: #0066cc;
   color: #000;
-  box-shadow: 0 0 10px #00ff0050;
+  box-shadow: 0 0 10px #0080ff50;
 }
 
 .audio-btn.playing {
-  background: #00aa00;
+  background: #0066cc;
   color: #000;
   animation: pulse 2s infinite;
 }
@@ -417,11 +417,11 @@ body {
 .chat-section {
   flex: 1;
   background-color: #000;
-  border: 2px solid #00aa00;
+  border: 2px solid #0066cc;
   border-radius: 8px;
   box-shadow: 
-    0 0 15px #00aa0030,
-    inset 0 0 15px #00aa0015;
+    0 0 15px #0066cc30,
+    inset 0 0 15px #0066cc15;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -447,9 +447,9 @@ body {
 }
 
 .chat-header {
-  background: #001100;
+  background: #001144;
   padding: 10px 15px;
-  border-bottom: 1px solid #00aa00;
+  border-bottom: 1px solid #0066cc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -458,13 +458,13 @@ body {
 }
 
 .chat-title {
-  color: #00aa00;
+  color: #0066cc;
   font-weight: bold;
   font-size: 14px;
 }
 
 .chat-users {
-  color: #00aa00;
+  color: #0066cc;
   font-size: 12px;
   opacity: 0.8;
 }
@@ -478,7 +478,7 @@ body {
 }
 
 .chat-empty {
-  color: #00aa00;
+  color: #0066cc;
   opacity: 0.6;
   text-align: center;
   margin-top: 50px;
@@ -489,7 +489,7 @@ body {
   margin-bottom: 15px;
   padding: 8px;
   background: rgba(0, 170, 0, 0.05);
-  border-left: 2px solid #00aa00;
+  border-left: 2px solid #0066cc;
   border-radius: 4px;
 }
 
@@ -501,17 +501,17 @@ body {
 }
 
 .message-user {
-  color: #00ff00;
+  color: #0080ff;
   font-weight: bold;
 }
 
 .message-time {
-  color: #00aa00;
+  color: #0066cc;
   opacity: 0.7;
 }
 
 .message-text {
-  color: #00ff00;
+  color: #0080ff;
   font-size: 13px;
   line-height: 1.4;
   word-wrap: break-word;
@@ -519,8 +519,8 @@ body {
 
 .chat-input-section {
   padding: 10px 15px;
-  border-top: 1px solid #00aa00;
-  background: #001100;
+  border-top: 1px solid #0066cc;
+  background: #001144;
   position: relative;
   z-index: 2;
 }
@@ -536,7 +536,7 @@ body {
 }
 
 .chat-prompt {
-  color: #00aa00;
+  color: #0066cc;
   font-weight: bold;
 }
 
@@ -544,21 +544,21 @@ body {
   flex: 1;
   background: transparent;
   border: none;
-  color: #00ff00;
+  color: #0080ff;
   font-family: inherit;
   font-size: 13px;
   outline: none;
   padding: 5px;
-  border-bottom: 1px solid #00aa00;
+  border-bottom: 1px solid #0066cc;
 }
 
 .chat-input::placeholder {
-  color: #00aa0080;
+  color: #0066cc80;
 }
 
 .chat-input:focus {
-  border-bottom-color: #00ff00;
-  box-shadow: 0 1px 0 #00ff00;
+  border-bottom-color: #0080ff;
+  box-shadow: 0 1px 0 #0080ff;
 }
 
 /* Scrollbar personnalisée */
@@ -571,18 +571,18 @@ body {
 .terminal-body::-webkit-scrollbar-track,
 .words-display::-webkit-scrollbar-track,
 .chat-messages::-webkit-scrollbar-track {
-  background: #001100;
+  background: #001144;
 }
 
 .terminal-body::-webkit-scrollbar-thumb,
 .words-display::-webkit-scrollbar-thumb,
 .chat-messages::-webkit-scrollbar-thumb {
-  background: #00aa00;
+  background: #0066cc;
   border-radius: 4px;
 }
 
 .terminal-body::-webkit-scrollbar-thumb:hover,
 .words-display::-webkit-scrollbar-thumb:hover,
 .chat-messages::-webkit-scrollbar-thumb:hover {
-  background: #00ff00;
+  background: #0080ff;
 }

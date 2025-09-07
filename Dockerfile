@@ -1,4 +1,4 @@
-# Dockerfile pour Chrono Terminal
+# Dockerfile pour BIPSEED-39
 FROM node:18-alpine
 
 # Créer le répertoire de l'application

@@ -1,7 +1,7 @@
 {
-  "name": "chrono-server",
+  "name": "bipseed-39-server",
   "version": "1.0.0",
-  "description": "Backend temps réel pour Chrono Terminal",
+  "description": "Backend temps réel pour BIPSEED-39",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

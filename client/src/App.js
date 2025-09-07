@@ -221,7 +221,7 @@ const App = () => {
         {/* Terminal principal */}
         <div className="terminal">
           <div className="terminal-header">
-            <div className="terminal-title">CHRONO TERMINAL v1.0</div>
+            <div className="terminal-title">BIPSEED-39 v1.0</div>
             <div className="connection-status">
               Status: {connectionStatus}
             </div>

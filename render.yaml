@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: chrono-terminal-backend
+    name: bipseed-39-backend
     env: node
     plan: free
     buildCommand: cd server && npm install

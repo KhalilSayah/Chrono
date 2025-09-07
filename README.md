@@ -1,4 +1,4 @@
-# Chrono Terminal - Application Web Temps Réel
+# BIPSEED-39 - Application Web Temps Réel
 
 Application web collaborative avec interface terminal qui gère des cycles de 15 minutes avec phases d'entrée collaborative.
 
@@ -86,7 +86,7 @@ npm run start-prod
 
 1. **Construire l'image Docker :**
 ```bash
-docker build -t chrono-terminal .
+docker build -t bipseed-39 .
 ```
 
 2. **Lancer avec Docker Compose :**

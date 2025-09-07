@@ -210,7 +210,7 @@ app.get('/health', (req, res) => {
 
 // Démarrer le serveur
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Serveur Chrono Terminal démarré sur le port ${PORT}`);
+  console.log(`Serveur BIPSEED-39 démarré sur le port ${PORT}`);
   console.log(`Serveur accessible sur toutes les interfaces réseau`);
   console.log(`Code secret admin: ${ADMIN_SECRET}`);
   
