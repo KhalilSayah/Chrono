@@ -561,6 +561,21 @@ body {
   box-shadow: 0 1px 0 #0080ff;
 }
 
+/* Messages admin */
+.admin-message {
+  background: rgba(255, 0, 0, 0.1);
+  border-left-color: #ff0000;
+}
+
+.admin-user {
+  color: #ff0000 !important;
+  font-weight: bold;
+}
+
+.admin-text {
+  color: #ff4444 !important;
+}
+
 /* Scrollbar personnalisée */
 .terminal-body::-webkit-scrollbar,
 .words-display::-webkit-scrollbar,

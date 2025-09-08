@@ -265,17 +265,23 @@ const App = () => {
             {chatMessages.length === 0 ? (
               <div className="chat-empty">No messages yet...</div>
             ) : (
-              chatMessages.map((message) => (
-                <div key={message.id} className="chat-message">
-                  <div className="message-header">
-                    <span className="message-user">{message.user}</span>
-                    <span className="message-time">
-                      {new Date(message.timestamp).toLocaleTimeString()}
-                    </span>
+              chatMessages.map((message) => {
+                const isAdminMessage = message.text.startsWith('/admin ');
+                const displayText = isAdminMessage ? message.text.substring(7) : message.text;
+                const displayUser = isAdminMessage ? 'admin' : message.user;
+                
+                return (
+                  <div key={message.id} className={`chat-message ${isAdminMessage ? 'admin-message' : ''}`}>
+                    <div className="message-header">
+                      <span className={`message-user ${isAdminMessage ? 'admin-user' : ''}`}>{displayUser}</span>
+                      <span className="message-time">
+                        {new Date(message.timestamp).toLocaleTimeString()}
+                      </span>
+                    </div>
+                    <div className={`message-text ${isAdminMessage ? 'admin-text' : ''}`}>{displayText}</div>
                   </div>
-                  <div className="message-text">{message.text}</div>
-                </div>
-              ))
+                );
+              })
             )}
           </div>
           
