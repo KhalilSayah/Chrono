@@ -248,7 +248,8 @@ const App = () => {
                 loop
                 preload="auto"
               >
-                <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIG2m98OScTgwOUarm7blmHgU7k9n1unEiBC13yO/eizEIHWq+8+OWTwwOUKjk77RiGgU4kdXzzHksBSR3x/DdkEAKFF606+uoVRQKRp/g8r5sIQUrg8/z2Yk2CBtpvfDknE4MDlCq5u25Zh4FO5PZ9bpxIgQtd8jv3osxCB1qvvPjlk8MDlCo5O+0YhoFOJHV88x5LAUkd8fw3ZBACg==" type="audio/wav" />
+                <source src="/whatthehellisthat.wav" type="audio/wav" />
+                Your browser does not support the audio element.
               </audio>
             </div>
           </div>
